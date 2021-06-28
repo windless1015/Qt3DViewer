@@ -1,6 +1,9 @@
 #include "Qt3DViewer.h"
 #include "openmeshApps/MeshViewerWidget.h"
 #include <qstyle.h>
+#include <qfiledialog.h>
+#include <qstandardpaths.h>
+#include <qdebug.h>
 
 Qt3DViewer::Qt3DViewer(QWidget *parent)
     : QMainWindow(parent)
@@ -53,5 +56,10 @@ void Qt3DViewer::createActions()
 
 void Qt3DViewer::importMesh()
 {
-
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Import Mesh"), QStandardPaths::writableLocation(QStandardPaths::DesktopLocation), "STL(*.stl)");
+    if (!fileName.isEmpty())
+    {
+        OpenMesh::IO::Options opt;
+        _meshViewerWidget->open_mesh(fileName.toLocal8Bit().data(), opt);
+    }
 }
