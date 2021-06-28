@@ -1,0 +1,4 @@
+<RCC>
+    <qresource prefix="Qt3DViewer">
+    </qresource>
+</RCC>

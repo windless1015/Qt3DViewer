@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D012D36A-0C25-3C07-868E-133DE19B4BA0}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>Qt3DViewer</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\code\Qt3DViewer\Qt3DViewer\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Qt3DViewer.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Qt3DViewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\code\Qt3DViewer\Qt3DViewer\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Qt3DViewer.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Qt3DViewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\code\Qt3DViewer\Qt3DViewer\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Qt3DViewer.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Qt3DViewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\code\Qt3DViewer\Qt3DViewer\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Qt3DViewer.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Qt3DViewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\code\Qt3DViewer\Qt3DViewer\build;E:\code\Qt3DViewer\Qt3DViewer;E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\include_Debug;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtWidgets;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtGui;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtANGLE;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtCore;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtOpenGL;D:\Librarys\OpenMesh 8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\code\Qt3DViewer\Qt3DViewer\build;E:\code\Qt3DViewer\Qt3DViewer;E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\include_Debug;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtWidgets;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtGui;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtANGLE;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtCore;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtOpenGL;D:\Librarys\OpenMesh 8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\code\Qt3DViewer\Qt3DViewer\build;E:\code\Qt3DViewer\Qt3DViewer;E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\include_Debug;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtWidgets;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtGui;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtANGLE;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtCore;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtOpenGL;D:\Librarys\OpenMesh 8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Automatic MOC and UIC for target Qt3DViewer</Message>
+      <Command>setlocal
+cd E:\code\Qt3DViewer\Qt3DViewer\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/Qt3DViewer_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5OpenGLd.lib;D:\Librarys\OpenMesh 8.1\lib\OpenMeshCored.lib;D:\Librarys\OpenMesh 8.1\lib\OpenMeshToolsd.lib;OpenGL32.lib;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5Widgetsd.lib;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5Guid.lib;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5Cored.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/code/Qt3DViewer/Qt3DViewer/build/Debug/Qt3DViewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/code/Qt3DViewer/Qt3DViewer/build/Debug/Qt3DViewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\code\Qt3DViewer\Qt3DViewer\build;E:\code\Qt3DViewer\Qt3DViewer;E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\include_Release;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtWidgets;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtGui;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtANGLE;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtCore;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtOpenGL;D:\Librarys\OpenMesh 8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\code\Qt3DViewer\Qt3DViewer\build;E:\code\Qt3DViewer\Qt3DViewer;E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\include_Release;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtWidgets;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtGui;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtANGLE;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtCore;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtOpenGL;D:\Librarys\OpenMesh 8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\code\Qt3DViewer\Qt3DViewer\build;E:\code\Qt3DViewer\Qt3DViewer;E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\include_Release;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtWidgets;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtGui;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtANGLE;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtCore;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtOpenGL;D:\Librarys\OpenMesh 8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Automatic MOC and UIC for target Qt3DViewer</Message>
+      <Command>setlocal
+cd E:\code\Qt3DViewer\Qt3DViewer\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/Qt3DViewer_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5OpenGL.lib;D:\Librarys\OpenMesh 8.1\lib\OpenMeshCore.lib;D:\Librarys\OpenMesh 8.1\lib\OpenMeshTools.lib;OpenGL32.lib;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5Gui.lib;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5Core.lib;D:\Librarys\OpenMesh 8.1\lib\OpenMeshCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/code/Qt3DViewer/Qt3DViewer/build/Release/Qt3DViewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/code/Qt3DViewer/Qt3DViewer/build/Release/Qt3DViewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\code\Qt3DViewer\Qt3DViewer\build;E:\code\Qt3DViewer\Qt3DViewer;E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\include_MinSizeRel;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtWidgets;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtGui;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtANGLE;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtCore;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtOpenGL;D:\Librarys\OpenMesh 8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\code\Qt3DViewer\Qt3DViewer\build;E:\code\Qt3DViewer\Qt3DViewer;E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\include_MinSizeRel;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtWidgets;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtGui;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtANGLE;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtCore;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtOpenGL;D:\Librarys\OpenMesh 8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\code\Qt3DViewer\Qt3DViewer\build;E:\code\Qt3DViewer\Qt3DViewer;E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\include_MinSizeRel;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtWidgets;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtGui;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtANGLE;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtCore;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtOpenGL;D:\Librarys\OpenMesh 8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Automatic MOC and UIC for target Qt3DViewer</Message>
+      <Command>setlocal
+cd E:\code\Qt3DViewer\Qt3DViewer\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/Qt3DViewer_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5OpenGL.lib;D:\Librarys\OpenMesh 8.1\lib\OpenMeshCore.lib;D:\Librarys\OpenMesh 8.1\lib\OpenMeshTools.lib;OpenGL32.lib;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5Gui.lib;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5Core.lib;D:\Librarys\OpenMesh 8.1\lib\OpenMeshCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/code/Qt3DViewer/Qt3DViewer/build/MinSizeRel/Qt3DViewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/code/Qt3DViewer/Qt3DViewer/build/MinSizeRel/Qt3DViewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\code\Qt3DViewer\Qt3DViewer\build;E:\code\Qt3DViewer\Qt3DViewer;E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\include_RelWithDebInfo;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtWidgets;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtGui;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtANGLE;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtCore;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtOpenGL;D:\Librarys\OpenMesh 8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\code\Qt3DViewer\Qt3DViewer\build;E:\code\Qt3DViewer\Qt3DViewer;E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\include_RelWithDebInfo;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtWidgets;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtGui;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtANGLE;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtCore;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtOpenGL;D:\Librarys\OpenMesh 8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\code\Qt3DViewer\Qt3DViewer\build;E:\code\Qt3DViewer\Qt3DViewer;E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\include_RelWithDebInfo;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtWidgets;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtGui;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtANGLE;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtCore;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\include\QtOpenGL;D:\Librarys\OpenMesh 8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Automatic MOC and UIC for target Qt3DViewer</Message>
+      <Command>setlocal
+cd E:\code\Qt3DViewer\Qt3DViewer\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/Qt3DViewer_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5OpenGL.lib;D:\Librarys\OpenMesh 8.1\lib\OpenMeshCore.lib;D:\Librarys\OpenMesh 8.1\lib\OpenMeshTools.lib;OpenGL32.lib;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5Gui.lib;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\Qt5Core.lib;D:\Librarys\OpenMesh 8.1\lib\OpenMeshCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/code/Qt3DViewer/Qt3DViewer/build/RelWithDebInfo/Qt3DViewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/code/Qt3DViewer/Qt3DViewer/build/RelWithDebInfo/Qt3DViewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\code\Qt3DViewer\Qt3DViewer\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/code/Qt3DViewer/Qt3DViewer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/Qt3DViewer/Qt3DViewer -BE:/code/Qt3DViewer/Qt3DViewer/build --check-stamp-file E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Librarys\OpenMesh 8.1\share\OpenMesh\cmake\OpenMeshConfig-release.cmake;D:\Librarys\OpenMesh 8.1\share\OpenMesh\cmake\OpenMeshConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeParseArguments.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\3.20.4\CMakeCXXCompiler.cmake;E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\3.20.4\CMakeRCCompiler.cmake;E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\3.20.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/code/Qt3DViewer/Qt3DViewer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/Qt3DViewer/Qt3DViewer -BE:/code/Qt3DViewer/Qt3DViewer/build --check-stamp-file E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Librarys\OpenMesh 8.1\share\OpenMesh\cmake\OpenMeshConfig-release.cmake;D:\Librarys\OpenMesh 8.1\share\OpenMesh\cmake\OpenMeshConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeParseArguments.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\3.20.4\CMakeCXXCompiler.cmake;E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\3.20.4\CMakeRCCompiler.cmake;E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\3.20.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/code/Qt3DViewer/Qt3DViewer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/Qt3DViewer/Qt3DViewer -BE:/code/Qt3DViewer/Qt3DViewer/build --check-stamp-file E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Librarys\OpenMesh 8.1\share\OpenMesh\cmake\OpenMeshConfig-release.cmake;D:\Librarys\OpenMesh 8.1\share\OpenMesh\cmake\OpenMeshConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeParseArguments.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\3.20.4\CMakeCXXCompiler.cmake;E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\3.20.4\CMakeRCCompiler.cmake;E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\3.20.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/code/Qt3DViewer/Qt3DViewer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -SE:/code/Qt3DViewer/Qt3DViewer -BE:/code/Qt3DViewer/Qt3DViewer/build --check-stamp-file E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Librarys\OpenMesh 8.1\share\OpenMesh\cmake\OpenMeshConfig-release.cmake;D:\Librarys\OpenMesh 8.1\share\OpenMesh\cmake\OpenMeshConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\Librarys\Qt\Qt5.15.2\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeParseArguments.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\3.20.4\CMakeCXXCompiler.cmake;E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\3.20.4\CMakeRCCompiler.cmake;E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\3.20.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\code\Qt3DViewer\Qt3DViewer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="E:\code\Qt3DViewer\Qt3DViewer\main.cpp" />
+    <ClCompile Include="E:\code\Qt3DViewer\Qt3DViewer\Qt3DViewer.cpp" />
+    <ClInclude Include="E:\code\Qt3DViewer\Qt3DViewer\Qt3DViewer.h" />
+    <None Include="E:\code\Qt3DViewer\Qt3DViewer\Qt3DViewer.ui">
+    </None>
+    <ClCompile Include="E:\code\Qt3DViewer\Qt3DViewer\openmeshApps\MeshViewerWidget.cpp" />
+    <ClInclude Include="E:\code\Qt3DViewer\Qt3DViewer\openmeshApps\MeshViewerWidget.h" />
+    <ClInclude Include="E:\code\Qt3DViewer\Qt3DViewer\openmeshApps\MeshViewerWidgetT.h" />
+    <ClInclude Include="E:\code\Qt3DViewer\Qt3DViewer\openmeshApps\MeshViewerWidgetT_impl.h" />
+    <ClInclude Include="E:\code\Qt3DViewer\Qt3DViewer\openmeshApps\QGLViewerWidget.h" />
+    <ClCompile Include="E:\code\Qt3DViewer\Qt3DViewer\openmeshApps\QGLViewerWidget.cpp" />
+    <ClCompile Include="E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="E:\code\Qt3DViewer\Qt3DViewer\build\Qt3DViewer_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\code\Qt3DViewer\Qt3DViewer\build\ZERO_CHECK.vcxproj">
+      <Project>{538FBD96-B24C-34F4-8AEE-97A3DFC1DC1D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,197 @@
+{
+	"BUILD_DIR" : "E:/code/Qt3DViewer/Qt3DViewer/build/Qt3DViewer_autogen",
+	"CMAKE_BINARY_DIR" : "E:/code/Qt3DViewer/Qt3DViewer/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "E:/code/Qt3DViewer/Qt3DViewer/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "E:/code/Qt3DViewer/Qt3DViewer",
+	"CMAKE_EXECUTABLE" : "D:/Program Files (x86)/CMake/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"E:/code/Qt3DViewer/Qt3DViewer/CMakeLists.txt",
+		"E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/3.20.4/CMakeSystem.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInitialize.cmake",
+		"E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/3.20.4/CMakeCXXCompiler.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInformation.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/CMakeGenericSystem.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/CMakeInitializeConfigs.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/Platform/Windows.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/Platform/WindowsPaths.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/CMakeCXXInformation.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/Compiler/MSVC-CXX.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC-CXX.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC.cmake",
+		"E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/3.20.4/CMakeRCCompiler.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/CMakeRCInformation.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5Config.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5Config.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/CMakeParseArguments.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
+		"D:/Program Files (x86)/CMake/share/cmake-3.20/Modules/CMakeParseArguments.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake",
+		"D:/Librarys/OpenMesh 8.1/share/OpenMesh/cmake/OpenMeshConfig.cmake",
+		"D:/Librarys/OpenMesh 8.1/share/OpenMesh/cmake/OpenMeshConfig-release.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "E:/code/Qt3DViewer/Qt3DViewer",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"E:/code/Qt3DViewer/Qt3DViewer/Qt3DViewer.h",
+			"MU",
+			"EWIEGA46WW/moc_Qt3DViewer.cpp",
+			null
+		],
+		[
+			"E:/code/Qt3DViewer/Qt3DViewer/openmeshApps/MeshViewerWidget.h",
+			"MU",
+			"4JV7IWOIOA/moc_MeshViewerWidget.cpp",
+			null
+		],
+		[
+			"E:/code/Qt3DViewer/Qt3DViewer/openmeshApps/MeshViewerWidgetT.h",
+			"MU",
+			"4JV7IWOIOA/moc_MeshViewerWidgetT.cpp",
+			null
+		],
+		[
+			"E:/code/Qt3DViewer/Qt3DViewer/openmeshApps/MeshViewerWidgetT_impl.h",
+			"MU",
+			"4JV7IWOIOA/moc_MeshViewerWidgetT_impl.cpp",
+			null
+		],
+		[
+			"E:/code/Qt3DViewer/Qt3DViewer/openmeshApps/QGLViewerWidget.h",
+			"MU",
+			"4JV7IWOIOA/moc_QGLViewerWidget.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "E:/code/Qt3DViewer/Qt3DViewer/build/Qt3DViewer_autogen/include",
+	"INCLUDE_DIR_Debug" : "E:/code/Qt3DViewer/Qt3DViewer/build/Qt3DViewer_autogen/include_Debug",
+	"INCLUDE_DIR_MinSizeRel" : "E:/code/Qt3DViewer/Qt3DViewer/build/Qt3DViewer_autogen/include_MinSizeRel",
+	"INCLUDE_DIR_RelWithDebInfo" : "E:/code/Qt3DViewer/Qt3DViewer/build/Qt3DViewer_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "E:/code/Qt3DViewer/Qt3DViewer/build/Qt3DViewer_autogen/include_Release",
+	"MOC_COMPILATION_FILE" : "E:/code/Qt3DViewer/Qt3DViewer/build/Qt3DViewer_autogen/mocs_compilation.cpp",
+	"MOC_COMPILATION_FILE_Debug" : "E:/code/Qt3DViewer/Qt3DViewer/build/Qt3DViewer_autogen/mocs_compilation_Debug.cpp",
+	"MOC_COMPILATION_FILE_MinSizeRel" : "E:/code/Qt3DViewer/Qt3DViewer/build/Qt3DViewer_autogen/mocs_compilation_MinSizeRel.cpp",
+	"MOC_COMPILATION_FILE_RelWithDebInfo" : "E:/code/Qt3DViewer/Qt3DViewer/build/Qt3DViewer_autogen/mocs_compilation_RelWithDebInfo.cpp",
+	"MOC_COMPILATION_FILE_Release" : "E:/code/Qt3DViewer/Qt3DViewer/build/Qt3DViewer_autogen/mocs_compilation_Release.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_OPENGL_LIB",
+		"QT_WIDGETS_LIB",
+		"WIN32",
+		"_USE_MATH_DEFINES"
+	],
+	"MOC_DEFINITIONS_Debug" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_OPENGL_LIB",
+		"QT_WIDGETS_LIB",
+		"WIN32",
+		"_USE_MATH_DEFINES"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"E:/code/Qt3DViewer/Qt3DViewer/build",
+		"E:/code/Qt3DViewer/Qt3DViewer",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/include",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/include/QtWidgets",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/include/QtGui",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/include/QtANGLE",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/include/QtCore",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/mkspecs/win32-msvc",
+		"D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/include/QtOpenGL",
+		"D:/Librarys/OpenMesh 8.1/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : [],
+	"MOC_PREDEFS_FILE" : "",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : true,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/Qt3DViewer_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE_Debug" : "E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/Qt3DViewer_autogen.dir/ParseCache_Debug.txt",
+	"PARSE_CACHE_FILE_MinSizeRel" : "E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/Qt3DViewer_autogen.dir/ParseCache_MinSizeRel.txt",
+	"PARSE_CACHE_FILE_RelWithDebInfo" : "E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/Qt3DViewer_autogen.dir/ParseCache_RelWithDebInfo.txt",
+	"PARSE_CACHE_FILE_Release" : "E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/Qt3DViewer_autogen.dir/ParseCache_Release.txt",
+	"QT_MOC_EXECUTABLE" : "D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "D:/Librarys/Qt/Qt5.15.2/5.15.2/msvc2019_64/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/Qt3DViewer_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE_Debug" : "E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/Qt3DViewer_autogen.dir/AutogenUsed_Debug.txt",
+	"SETTINGS_FILE_MinSizeRel" : "E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/Qt3DViewer_autogen.dir/AutogenUsed_MinSizeRel.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/Qt3DViewer_autogen.dir/AutogenUsed_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "E:/code/Qt3DViewer/Qt3DViewer/build/CMakeFiles/Qt3DViewer_autogen.dir/AutogenUsed_Release.txt",
+	"SOURCES" : 
+	[
+		[ "E:/code/Qt3DViewer/Qt3DViewer/Qt3DViewer.cpp", "MU", null ],
+		[ "E:/code/Qt3DViewer/Qt3DViewer/main.cpp", "MU", null ],
+		[
+			"E:/code/Qt3DViewer/Qt3DViewer/openmeshApps/MeshViewerWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"E:/code/Qt3DViewer/Qt3DViewer/openmeshApps/QGLViewerWidget.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}
