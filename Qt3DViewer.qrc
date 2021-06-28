@@ -1,4 +1,5 @@
 <RCC>
-    <qresource prefix="Qt3DViewer">
+    <qresource prefix="/Qt3DViewer">
+        <file>Resources/images/importMesh.png</file>
     </qresource>
 </RCC>

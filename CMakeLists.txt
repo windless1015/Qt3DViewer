@@ -36,6 +36,7 @@ set(PROJECT_SOURCES
 		Qt3DViewer.cpp
 		Qt3DViewer.h
 		Qt3DViewer.ui
+        Qt3DViewer.qrc
 		openmeshApps/MeshViewerWidget.cpp
 		openmeshApps/MeshViewerWidget.h
 		openmeshApps/MeshViewerWidgetT.h
