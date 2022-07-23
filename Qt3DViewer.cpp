@@ -9,6 +9,7 @@ Qt3DViewer::Qt3DViewer(QWidget *parent)
     : QMainWindow(parent)
     , _meshViewerWidget(new MeshViewerWidget())
     , _importMeshAction(new QAction(this))
+	,_setTexture(new QAction(this))
 {
     ui.setupUi(this);
 
@@ -40,6 +41,7 @@ void Qt3DViewer::createMenus()
 {
     QMenu *fileMenu = this->menuBar()->addMenu(tr("File"));
     fileMenu->addAction(_importMeshAction);
+	fileMenu->addAction(_setTexture);
 }
 
 void Qt3DViewer::createToolbars()
@@ -52,14 +54,25 @@ void Qt3DViewer::createActions()
     _importMeshAction->setIcon(QIcon(":/Qt3DViewer/Resources/images/importMesh.png"));
     _importMeshAction->setText(tr("Import Mesh"));
     connect(_importMeshAction, &QAction::triggered, this, &Qt3DViewer::importMesh);
+
+	_setTexture->setText(tr("Set Texture"));
+	connect(_setTexture, &QAction::triggered, this, &Qt3DViewer::setTexture);
 }
 
 void Qt3DViewer::importMesh()
 {
-    QString fileName = QFileDialog::getOpenFileName(this, tr("Import Mesh"), QStandardPaths::writableLocation(QStandardPaths::DesktopLocation), "STL(*.stl)");
+	_meshViewerWidget->query_open_mesh_file();
+
+    /*QString fileName = QFileDialog::getOpenFileName(this, tr("Import Mesh"), QStandardPaths::writableLocation(QStandardPaths::DesktopLocation), "STL(*.stl)");
     if (!fileName.isEmpty())
     {
         OpenMesh::IO::Options opt;
         _meshViewerWidget->open_mesh(fileName.toLocal8Bit().data(), opt);
-    }
+    }*/
+}
+
+void Qt3DViewer::setTexture()
+{
+	_meshViewerWidget->query_open_texture_file();
+
 }

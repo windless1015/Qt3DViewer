@@ -14,11 +14,13 @@ public:
     Qt3DViewer(QWidget *parent = Q_NULLPTR);
 private slots:
     void importMesh();
+	void setTexture();
 private:
     Ui::Qt3DViewerClass ui;
 
     MeshViewerWidget* _meshViewerWidget;
     QAction* _importMeshAction;
+	QAction* _setTexture;
     QToolBar* _fileToolBar;
 
     void displayMesh();
