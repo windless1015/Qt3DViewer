@@ -125,14 +125,16 @@ protected:
   virtual void draw_scene(const std::string& _draw_mode);
 
   double performance(void);
-  
+  //设置默认材质
   void setDefaultMaterial(void);
+  //设置默认灯光
   void setDefaultLight(void);
 
 private slots:  
 
   // popup menu clicked
-  void slotDrawMode(QAction *_mode);  
+  void slotDrawMode(QAction *_mode); 
+  //响应截图
   void slotSnapshot( void );
 
   

@@ -2,14 +2,26 @@ cmake_minimum_required(VERSION 3.5)
 
 project(Qt3DViewer VERSION 0.1 LANGUAGES CXX)
 
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-set(CMAKE_AUTOUIC ON)
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTORCC ON)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+
+SET(Qt5_DIR D:/Librarys/Qt/Qt5.12.10/5.12.10/msvc2015_64/lib/cmake/Qt5)
+SET(OpenMesh_DIR D:/Librarys/OpenMesh8.1/share/OpenMesh/cmake)
+
+
+SET(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} Qt5_DIR OpenMesh_DIR)
+SET(CMAKE_INCLUDE_CURRENT_DIR ON)
+SEt(CMAKE_AUTOMOC ON)
+SEt(CMAKE_AUTORCC ON)
+SET(CMAKE_AUTOUIC ON)
+
+
+
+FIND_PACKAGE(Qt5 COMPONENTS Core Widgets Gui OpenGL REQUIRED)
+FIND_PACKAGE(OpenMesh REQUIRED)
 
 # QtCreator supports the following variables for Android, which are identical to qmake Android variables.
 # Check https://doc.qt.io/qt/deployment-android.html for more information.
@@ -24,12 +36,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #    endif()
 #endif()
 
-find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
-find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets OpenGL REQUIRED)
+#find_package(Qt5 COMPONENTS Widgets OpenGL REQUIRED)
 
-find_package(OpenMesh REQUIRED)
-
-list(APPEND EXTRA_LIBS OpenGL32.lib)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -48,24 +56,35 @@ set(PROJECT_SOURCES
 
 add_definitions(-D_USE_MATH_DEFINES)
 
-if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(TestTabWidget
-        MANUAL_FINALIZATION
-        ${PROJECT_SOURCES}
-    )
-else()
-    if(ANDROID)
-        add_library(Qt3DViewer SHARED
-            ${PROJECT_SOURCES}
-        )
-    else()
-        add_executable(Qt3DViewer
-            ${PROJECT_SOURCES}
-        )
-    endif()
-endif()
 
-target_link_libraries(Qt3DViewer PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::OpenGL OpenMeshCore OpenMeshTools ${EXTRA_LIBS})
+add_executable(Qt3DViewer
+    ${PROJECT_SOURCES}
+)
+
+TARGET_LINK_DIRECTORIES(${CMAKE_PROJECT_NAME} PUBLIC
+	D:/Librarys/OpenMesh8.1/lib
+)
+
+#INCLUDE_DIRECTORIES(
+	
+#)
+target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC
+	D:/Librarys/OpenMesh8.1/include
+	${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+target_link_libraries( Qt3DViewer
+  Qt5::Core
+  Qt5::Widgets  
+  Qt5::Gui
+  Qt5::OpenGL
+  debug OpenMeshCored
+  debug OpenMeshToolsd
+  optimized OpenMeshCore
+  optimized OpenMeshTools
+  OpenGL32.lib
+)
+
 
 set_target_properties(Qt3DViewer PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
@@ -73,6 +92,5 @@ set_target_properties(Qt3DViewer PROPERTIES
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
 )
 
-if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(Qt3DViewer)
-endif()
+
+message(STATUS {"${OpenMesh_INCLUDE_DIRS}"})

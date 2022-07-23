@@ -65,6 +65,7 @@
 #include <openmeshApps/QGLViewerWidget.h>
 #include <OpenMesh/Tools/Utils/Timer.hh>
 
+
 #if !defined(M_PI)
 #  define M_PI 3.1415926535897932
 #endif
@@ -143,8 +144,7 @@ QGLViewerWidget::~QGLViewerWidget()
 
 //----------------------------------------------------------------------------
 
-void 
-QGLViewerWidget::setDefaultMaterial(void)
+void QGLViewerWidget::setDefaultMaterial(void)
 {
   GLfloat mat_a[] = {0.1f, 0.1f, 0.1f, 1.0f};
   GLfloat mat_d[] = {0.7f, 0.7f, 0.5f, 1.0f};
@@ -160,8 +160,7 @@ QGLViewerWidget::setDefaultMaterial(void)
 
 //----------------------------------------------------------------------------
 
-void
-QGLViewerWidget::setDefaultLight(void)
+void QGLViewerWidget::setDefaultLight(void)
 {
   GLfloat pos1[] = { 0.1f,  0.1f, -0.02f, 0.0f};
   GLfloat pos2[] = {-0.1f,  0.1f, -0.02f, 0.0f};
@@ -190,8 +189,7 @@ QGLViewerWidget::setDefaultLight(void)
 //----------------------------------------------------------------------------
 
 
-void
-QGLViewerWidget::initializeGL()
+void QGLViewerWidget::initializeGL()
 {  
   // OpenGL state
   glClearColor(0.0, 0.0, 0.0, 0.0);
@@ -225,8 +223,7 @@ QGLViewerWidget::initializeGL()
 //----------------------------------------------------------------------------
 
 
-void
-QGLViewerWidget::resizeGL( int _w, int _h )
+void QGLViewerWidget::resizeGL( int _w, int _h )
 {
   update_projection_matrix();
   glViewport(0, 0, _w, _h);
@@ -237,8 +234,7 @@ QGLViewerWidget::resizeGL( int _w, int _h )
 //----------------------------------------------------------------------------
 
 
-void
-QGLViewerWidget::paintGL()
+void QGLViewerWidget::paintGL()
 {
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
   glMatrixMode( GL_PROJECTION );
@@ -257,8 +253,7 @@ QGLViewerWidget::paintGL()
 //----------------------------------------------------------------------------
 
 
-void
-QGLViewerWidget::draw_scene(const std::string& _draw_mode)
+void QGLViewerWidget::draw_scene(const std::string& _draw_mode)
 {  
   if (_draw_mode == "Wireframe")
   {
@@ -285,8 +280,7 @@ QGLViewerWidget::draw_scene(const std::string& _draw_mode)
 //----------------------------------------------------------------------------
 
 
-void
-QGLViewerWidget::mousePressEvent( QMouseEvent* _event )
+void QGLViewerWidget::mousePressEvent( QMouseEvent* _event )
 {
   // popup menu
   if (_event->button() == RightButton && _event->buttons()== RightButton )
@@ -305,8 +299,7 @@ QGLViewerWidget::mousePressEvent( QMouseEvent* _event )
 //----------------------------------------------------------------------------
 
 
-void
-QGLViewerWidget::mouseMoveEvent( QMouseEvent* _event )
+void QGLViewerWidget::mouseMoveEvent( QMouseEvent* _event )
 {  
   QPoint newPoint2D = _event->pos(); 
   
@@ -404,8 +397,7 @@ QGLViewerWidget::mouseMoveEvent( QMouseEvent* _event )
 //----------------------------------------------------------------------------
 
 
-void
-QGLViewerWidget::mouseReleaseEvent( QMouseEvent* /* _event */ )
+void QGLViewerWidget::mouseReleaseEvent( QMouseEvent* /* _event */ )
 {  
    last_point_ok_ = false;
 }
@@ -501,8 +493,7 @@ void QGLViewerWidget::keyPressEvent( QKeyEvent* _event)
 //----------------------------------------------------------------------------
 
 
-void
-QGLViewerWidget::translate( const OpenMesh::Vec3f& _trans )
+void QGLViewerWidget::translate( const OpenMesh::Vec3f& _trans )
 {
   // Translate the object by _trans
   // Update modelview_matrix_
@@ -517,8 +508,7 @@ QGLViewerWidget::translate( const OpenMesh::Vec3f& _trans )
 //----------------------------------------------------------------------------
 
 
-void
-QGLViewerWidget::rotate( const OpenMesh::Vec3f& _axis, float _angle )
+void QGLViewerWidget::rotate( const OpenMesh::Vec3f& _axis, float _angle )
 {
   // Rotate around center center_, axis _axis, by angle _angle
   // Update modelview_matrix_
@@ -549,8 +539,7 @@ QGLViewerWidget::rotate( const OpenMesh::Vec3f& _axis, float _angle )
 //----------------------------------------------------------------------------
 
 
-bool
-QGLViewerWidget::map_to_sphere( const QPoint& _v2D, OpenMesh::Vec3f& _v3D )
+bool QGLViewerWidget::map_to_sphere( const QPoint& _v2D, OpenMesh::Vec3f& _v3D )
 {
     // This is actually doing the Sphere/Hyperbolic sheet hybrid thing,
     // based on Ken Shoemake's ArcBall in Graphics Gems IV, 1993.
@@ -576,8 +565,7 @@ QGLViewerWidget::map_to_sphere( const QPoint& _v2D, OpenMesh::Vec3f& _v3D )
 //----------------------------------------------------------------------------
 
 
-void
-QGLViewerWidget::update_projection_matrix()
+void QGLViewerWidget::update_projection_matrix()
 {
   makeCurrent();
   glMatrixMode( GL_PROJECTION );
@@ -603,8 +591,7 @@ QGLViewerWidget::update_projection_matrix()
 //----------------------------------------------------------------------------
 
 
-void
-QGLViewerWidget::view_all()
+void QGLViewerWidget::view_all()
 {  
   translate( Vec3f( -(modelview_matrix_[0]*center_[0] + 
 		      modelview_matrix_[4]*center_[1] +
@@ -625,8 +612,7 @@ QGLViewerWidget::view_all()
 //----------------------------------------------------------------------------
 
 
-void
-QGLViewerWidget::set_scene_pos( const OpenMesh::Vec3f& _cog, float _radius )
+void QGLViewerWidget::set_scene_pos( const OpenMesh::Vec3f& _cog, float _radius )
 {
   center_ = _cog;
   radius_ = _radius;
@@ -641,8 +627,7 @@ QGLViewerWidget::set_scene_pos( const OpenMesh::Vec3f& _cog, float _radius )
 //----------------------------------------------------------------------------
 
 
-QAction*
-QGLViewerWidget::add_draw_mode(const std::string& _s)
+QAction* QGLViewerWidget::add_draw_mode(const std::string& _s)
 {
   ++n_draw_modes_;
   draw_mode_names_.push_back(_s);
@@ -708,8 +693,7 @@ QAction* QGLViewerWidget::findAction(const char* name)
 //----------------------------------------------------------------------------
 
 
-void 
-QGLViewerWidget::del_draw_mode(const std::string& _s)
+void QGLViewerWidget::del_draw_mode(const std::string& _s)
 {
     QString cmp = _s.c_str();
     QList<QAction*> actions_ = popup_menu_->actions();
@@ -734,8 +718,7 @@ QGLViewerWidget::del_draw_mode(const std::string& _s)
 //----------------------------------------------------------------------------
 
 
-void
-QGLViewerWidget::slotDrawMode(QAction* _mode)
+void QGLViewerWidget::slotDrawMode(QAction* _mode)
 {
   // save draw mode
   draw_mode_ = _mode->data().toInt();
@@ -749,8 +732,7 @@ QGLViewerWidget::slotDrawMode(QAction* _mode)
 //----------------------------------------------------------------------------
 
 
-double 
-QGLViewerWidget::performance()
+double QGLViewerWidget::performance()
 {
   setCursor( Qt::WaitCursor );
 
@@ -802,8 +784,7 @@ QGLViewerWidget::performance()
 }
 
 
-void
-QGLViewerWidget::slotSnapshot( void )
+void QGLViewerWidget::slotSnapshot( void )
 {  
   QImage image;
   size_t w(width()), h(height());
